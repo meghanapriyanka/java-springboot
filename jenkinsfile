@@ -28,19 +28,23 @@ pipeline{
         }
         stage ('Deploy to QA')
         {
-            steps{
+            steps
+            {
                 echo 'Deploy to QA'
             }
         }
         stage('Deploy to prod') {
-            steps{
+            steps
+            {
                 echo 'Deploy to prod'
             }
         }
 
     }
-    post{
-        always {
+    post
+    {
+        always 
+        {
             echo 'I will always say hello again!'
         }
     }
