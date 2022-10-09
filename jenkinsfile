@@ -21,7 +21,7 @@ pipeline{
             }
 
         }
-        stage('Push to artifactory'){
+        stage('Push to a artifactory'){
             steps{
                 echo 'Push to artifactory'
             }
